@@ -14,7 +14,3 @@ export function genHomePage() {
     content.appendChild(summary)
 
 }
-
-export const log = function () {
-    console.log('logging')
-}
