@@ -8,7 +8,11 @@ const navLinks = [home, menu, contact]
 
 function genNavBar() {
     const navBar = document.createElement('section');
-    document.body.prepend(navBar)
+    const navBarWrapper = document.createElement('div')
+    navBarWrapper.appendChild(navBar)
+    navBarWrapper.classList.add('navBarWrapper')
+    document.body.prepend(navBarWrapper)
+    navBar.classList.add('navbar')
 
     home.innerText = 'Home'
     menu.innerText = 'Menu'

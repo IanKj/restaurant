@@ -5,7 +5,7 @@ export function genHomePage() {
     const summary = document.createElement('p')
 
     header.innerText = 'Jaspbrew'
-    image.src = "/src/beer.jpg"
+    image.src = "../src/images/beer.jpg"
     image.alt = "brewery"
     summary.innerText = 'At Jaspbrew we take special care to offer a diverse selection of refresshing adult beverages'
 
