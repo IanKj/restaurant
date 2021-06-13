@@ -1,3 +1,11 @@
+import beer0 from "../src/images/beer0.png"
+import beer1 from "../src/images/beer1.png"
+import beer2 from "../src/images/beer2.png"
+import beer3 from "../src/images/beer3.png"
+import beer4 from "../src/images/beer4.png"
+
+const beerImages = [beer0, beer1, beer2, beer3, beer4]
+
 export function genMenu() {
     const content = document.querySelector('#content')
     const header = document.createElement('h1')
@@ -30,7 +38,7 @@ export function genMenu() {
         beerWrapper.classList.add('beerWrapper')
         beerContainer.appendChild(beerWrapper)
         const beerImg = document.createElement('img')
-        beerImg.src = `../src/images/beer${index}.png`
+        beerImg.src = beerImages[index]
         beerImg.classList.add('beer')
         beerWrapper.appendChild(beer)
         beerWrapper.appendChild(beerImg)

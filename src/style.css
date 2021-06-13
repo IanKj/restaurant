@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #1b1a17;
+
+
+}
+#content {
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a35709;
+    margin-top: 60px;
+}
+
+.navBarWrapper {
+    background: #f0e3ca; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar div {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    position: relative;
+}
+
+.navbar div img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 80px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.selected {
+    font-weight: bolder;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.navbar div:hover{
+    transform: scale(1.5);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headerWrapper h1 {
+    font-size: 4rem;
+    padding: 0 20px;
+    margin-top: .2em;
+}
+.headerWrapper img {
+    height: 50px;
+    width: 50px;
+}
+
+.headerWrapper img:last-child {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.beerContainer {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.beer {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 630px){
+    .beerContainer {
+        width: auto;
+    }
+
+    #content {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 845px) {
+    #mainImage {
+        width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    #mainImage {
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px) {
+    .headerWrapper img {
+        display: none;
+    }
+
+    .headerWrapper h1 {
+        font-size: 2rem;
+    }
+}
